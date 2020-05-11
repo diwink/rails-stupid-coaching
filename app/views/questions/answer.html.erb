@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>stupid coaching</h1>
+  <p><%= params[:question] %></p>
+  <p>
+      <% if params[:question] == 'i am going to work' %>
+        <%= 'Great!' %>
+      <% elsif params[:question] != 'i am going to work' %>
+        <%= "I don't care, get dressed and go to work!" %>
+      <% else %>
+        <%= "I don't care, get dressed and go to work!" %>
+      <% end %>
+  </p>
+
+  <a><%= link_to "ask a new question", ask_path %></a>
+</div>
